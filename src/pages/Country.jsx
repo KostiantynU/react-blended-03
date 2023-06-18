@@ -10,7 +10,6 @@ export const Country = () => {
   const location = useLocation();
   const goBackLink = location?.state?.from || '/';
   const { countryId } = useParams();
-  console.log(countryId);
   useEffect(() => {
     setIsLoading(true);
     fetchCountry(countryId)
